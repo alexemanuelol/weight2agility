@@ -5,7 +5,7 @@ import json
 import os
 from pathlib import Path
 
-CONFIG_FILE = Path("config.json")
+CONFIG_FILE = Path('config.json')
 MIN_LEVEL = 1
 MAX_LEVEL = 99
 
@@ -30,7 +30,7 @@ def load_config() -> dict:
     print('\nConfig saved to config.json\n')
     return config
 
-def get_xp_from_level(level: number) -> int:
+def get_xp_from_level(level: int) -> int:
     """ Get XP based on level """
     xp = 0
     for i in range(1, level):
